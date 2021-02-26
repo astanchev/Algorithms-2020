@@ -9,7 +9,7 @@
 
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
+            long n = int.Parse(Console.ReadLine());
 
             results = new BigInteger[n + 1];
 
@@ -18,25 +18,19 @@
             PrintFibonacci(n);
         }
 
-        private static void PrintFibonacci(int n)
+        private static void PrintFibonacci(long n)
         {
             Console.WriteLine(results[n]);
         }
 
-        private static BigInteger FindFibbonacci(int n)
+        private static BigInteger FindFibbonacci(long n)
         {
             if (results[n] != 0)
             {
                 return results[n];
             }
 
-            if (n == 0)
-            {
-                results[n] = 1;
-                return 1;
-            }
-
-            if (n == 1)
+            if (n == 0 || n == 1)
             {
                 results[n] = 1;
                 return 1;
