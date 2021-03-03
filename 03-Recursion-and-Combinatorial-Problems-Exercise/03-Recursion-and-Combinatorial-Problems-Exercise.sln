@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Reverse_Array", "01_Reverse_Array\01_Reverse_Array.csproj", "{13B9B224-2894-4947-AC0F-5520781FD63E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Reverse_Array", "01_Reverse_Array\01_Reverse_Array.csproj", "{13B9B224-2894-4947-AC0F-5520781FD63E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Nested_Loops_To_Recursion", "02_Nested_Loops_To_Recursion\02_Nested_Loops_To_Recursion.csproj", "{A2B27187-FCC1-434D-9378-E9371BB7E4E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Nested_Loops_To_Recursion", "02_Nested_Loops_To_Recursion\02_Nested_Loops_To_Recursion.csproj", "{A2B27187-FCC1-434D-9378-E9371BB7E4E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Combinations_with_Repetition", "03_Combinations_with_Repetition\03_Combinations_with_Repetition.csproj", "{DB9B5CBE-010A-416A-8C91-7B1DC62B524C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Combinations_with_Repetition", "03_Combinations_with_Repetition\03_Combinations_with_Repetition.csproj", "{DB9B5CBE-010A-416A-8C91-7B1DC62B524C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Combinations_without_Repetition", "04_Combinations_without_Repetition\04_Combinations_without_Repetition.csproj", "{259EEFFA-C24F-45CB-8833-B1380B9C0C02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_Combinations_without_Repetition", "04_Combinations_without_Repetition\04_Combinations_without_Repetition.csproj", "{259EEFFA-C24F-45CB-8833-B1380B9C0C02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Connected_Areas_in_a_Matrix", "05_Connected_Areas_in_a_Matrix\05_Connected_Areas_in_a_Matrix.csproj", "{3DCDC406-5DB7-4C90-802D-7C5DF507441E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Connected_Areas_in_a_Matrix", "05_Connected_Areas_in_a_Matrix\05_Connected_Areas_in_a_Matrix.csproj", "{3DCDC406-5DB7-4C90-802D-7C5DF507441E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Cinema", "06_Cinema\06_Cinema.csproj", "{BA9234F3-60C6-4B3F-8F78-A95394EED284}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_Cinema", "06_Cinema\06_Cinema.csproj", "{BA9234F3-60C6-4B3F-8F78-A95394EED284}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Word_Cruncher", "07_Word_Cruncher\07_Word_Cruncher.csproj", "{2FD2715E-5AFD-4A35-AD79-2792C51E9F41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_Word_Cruncher", "07_Word_Cruncher\07_Word_Cruncher.csproj", "{2FD2715E-5AFD-4A35-AD79-2792C51E9F41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_School_Teams", "08_School_Teams\08_School_Teams.csproj", "{E9BCD657-29C6-41C2-88D7-0AC6CC5C43BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_School_Teams", "08_School_Teams\08_School_Teams.csproj", "{E9BCD657-29C6-41C2-88D7-0AC6CC5C43BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Word_Cruncher2", "07_Word_Cruncher2\07_Word_Cruncher2.csproj", "{B6244499-60A2-45EF-A851-3543859BD035}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{E9BCD657-29C6-41C2-88D7-0AC6CC5C43BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9BCD657-29C6-41C2-88D7-0AC6CC5C43BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9BCD657-29C6-41C2-88D7-0AC6CC5C43BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6244499-60A2-45EF-A851-3543859BD035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6244499-60A2-45EF-A851-3543859BD035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6244499-60A2-45EF-A851-3543859BD035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6244499-60A2-45EF-A851-3543859BD035}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
