@@ -3,25 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Binary_Search", "01_Binary_Search\01_Binary_Search.csproj", "{45CB5238-DAB4-4077-BFC2-B75740B6EF3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Binary_Search", "01_Binary_Search\01_Binary_Search.csproj", "{45CB5238-DAB4-4077-BFC2-B75740B6EF3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Selection_Sort", "02_Selection_Sort\02_Selection_Sort.csproj", "{AAECAC47-D990-4BED-A7F6-DC3D76CDD717}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Selection_Sort", "02_Selection_Sort\02_Selection_Sort.csproj", "{AAECAC47-D990-4BED-A7F6-DC3D76CDD717}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Bubble_Sort", "03_Bubble_Sort\03_Bubble_Sort.csproj", "{9876117C-9FEB-4BDE-8473-1E80A2DEAD9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Bubble_Sort", "03_Bubble_Sort\03_Bubble_Sort.csproj", "{9876117C-9FEB-4BDE-8473-1E80A2DEAD9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Insertion_Sort", "04_Insertion_Sort\04_Insertion_Sort.csproj", "{4AC79BE2-BA91-4BDB-BDFA-B5C5BF171E0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_Insertion_Sort", "04_Insertion_Sort\04_Insertion_Sort.csproj", "{4AC79BE2-BA91-4BDB-BDFA-B5C5BF171E0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Qucksort", "05_Qucksort\05_Qucksort.csproj", "{9DF24BE7-BC94-485F-BB8E-69CC9DC00A19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Qucksort", "05_Qucksort\05_Qucksort.csproj", "{9DF24BE7-BC94-485F-BB8E-69CC9DC00A19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Merge_Sort", "06_Merge_Sort\06_Merge_Sort.csproj", "{4E6161B2-B311-44BF-BAAD-2D64658F2548}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_Merge_Sort", "06_Merge_Sort\06_Merge_Sort.csproj", "{4E6161B2-B311-44BF-BAAD-2D64658F2548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Sum_of_Coins", "07_Sum_of_Coins\07_Sum_of_Coins.csproj", "{532CFF79-B39B-4685-BB17-17D3F8051B4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_Sum_of_Coins", "07_Sum_of_Coins\07_Sum_of_Coins.csproj", "{532CFF79-B39B-4685-BB17-17D3F8051B4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Sum_of_Coins_Greedy_Approach", "07_Sum_of_Coins_Greedy_Approach\07_Sum_of_Coins_Greedy_Approach.csproj", "{79ADED58-F1E2-415E-9AE6-C3EAB70979F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_Sum_of_Coins_Greedy_Approach", "07_Sum_of_Coins_Greedy_Approach\07_Sum_of_Coins_Greedy_Approach.csproj", "{79ADED58-F1E2-415E-9AE6-C3EAB70979F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Set_Cover", "08_Set_Cover\08_Set_Cover.csproj", "{CC37CF9B-E46B-4593-A725-474F08DF49CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Set_Cover", "08_Set_Cover\08_Set_Cover.csproj", "{CC37CF9B-E46B-4593-A725-474F08DF49CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Set_Cover_Greedy_Approach", "08_Set_Cover_Greedy_Approach\08_Set_Cover_Greedy_Approach.csproj", "{DF434356-FAFF-4817-876D-EDEAD5810EB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Set_Cover_Greedy_Approach", "08_Set_Cover_Greedy_Approach\08_Set_Cover_Greedy_Approach.csproj", "{DF434356-FAFF-4817-876D-EDEAD5810EB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpolation_Search", "Interpolation_Search\Interpolation_Search.csproj", "{AF437919-9188-4802-84D3-C72D2364C836}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{DF434356-FAFF-4817-876D-EDEAD5810EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF434356-FAFF-4817-876D-EDEAD5810EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF434356-FAFF-4817-876D-EDEAD5810EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF437919-9188-4802-84D3-C72D2364C836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF437919-9188-4802-84D3-C72D2364C836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF437919-9188-4802-84D3-C72D2364C836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF437919-9188-4802-84D3-C72D2364C836}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
