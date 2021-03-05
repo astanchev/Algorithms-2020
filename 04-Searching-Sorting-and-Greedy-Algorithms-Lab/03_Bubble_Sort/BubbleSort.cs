@@ -9,7 +9,7 @@
         {
             var numbers = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            Sort2(numbers);
+            Sort(numbers);
 
             Console.WriteLine();
 
