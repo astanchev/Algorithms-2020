@@ -4,6 +4,7 @@
     using System.Linq;
     using System.Text;
 
+    //not greedy solution - takes best overall, not local solution - not for Judge
     class SumOfCoinsGreedy
     {
         static void Main(string[] args)
