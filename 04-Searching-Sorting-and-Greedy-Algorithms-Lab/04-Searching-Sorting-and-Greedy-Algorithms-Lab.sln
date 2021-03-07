@@ -19,11 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_Sum_of_Coins", "07_Sum_o
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_Sum_of_Coins_Greedy_Approach", "07_Sum_of_Coins_Greedy_Approach\07_Sum_of_Coins_Greedy_Approach.csproj", "{79ADED58-F1E2-415E-9AE6-C3EAB70979F0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Set_Cover", "08_Set_Cover\08_Set_Cover.csproj", "{CC37CF9B-E46B-4593-A725-474F08DF49CE}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Set_Cover_Greedy_Approach", "08_Set_Cover_Greedy_Approach\08_Set_Cover_Greedy_Approach.csproj", "{DF434356-FAFF-4817-876D-EDEAD5810EB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpolation_Search", "Interpolation_Search\Interpolation_Search.csproj", "{AF437919-9188-4802-84D3-C72D2364C836}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interpolation_Search", "Interpolation_Search\Interpolation_Search.csproj", "{AF437919-9188-4802-84D3-C72D2364C836}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +61,6 @@ Global
 		{79ADED58-F1E2-415E-9AE6-C3EAB70979F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79ADED58-F1E2-415E-9AE6-C3EAB70979F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79ADED58-F1E2-415E-9AE6-C3EAB70979F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC37CF9B-E46B-4593-A725-474F08DF49CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC37CF9B-E46B-4593-A725-474F08DF49CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC37CF9B-E46B-4593-A725-474F08DF49CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC37CF9B-E46B-4593-A725-474F08DF49CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DF434356-FAFF-4817-876D-EDEAD5810EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DF434356-FAFF-4817-876D-EDEAD5810EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF434356-FAFF-4817-876D-EDEAD5810EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU

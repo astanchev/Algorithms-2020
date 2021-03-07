@@ -12,6 +12,12 @@
             var coins = Console.ReadLine().Split(", ").Select(int.Parse).ToArray();
             var target = int.Parse(Console.ReadLine());
 
+            FindSolution(coins, target);
+
+        }
+
+        private static void FindSolution(int[] coins, int target)
+        {
             var sortedCoins = coins.OrderByDescending(c => c).ToList();
 
             var counter = 0;
@@ -31,6 +37,11 @@
                 }
             }
 
+            PrintResult(target, counter, sb);
+        }
+
+        private static void PrintResult(int target, int counter, StringBuilder sb)
+        {
             if (target > 0)
             {
                 Console.WriteLine("Error");
