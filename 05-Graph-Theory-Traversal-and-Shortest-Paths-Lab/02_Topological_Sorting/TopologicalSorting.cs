@@ -3,40 +3,49 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-
-    // Source Removal Algorithm
+        
     class TopologicalSorting
     {
         private static Dictionary<string, List<string>> graph;
         private static Dictionary<string, int> predecessorCount;
         private static List<string> sorted;
+        private static HashSet<string> visited;
+        private static HashSet<string> cycles;
 
         static void Main(string[] args)
         {
             graph = new Dictionary<string, List<string>>();
             predecessorCount = new Dictionary<string, int>();
             sorted = new List<string>();
+            visited = new HashSet<string>();
+            cycles = new HashSet<string>();
 
             var n = int.Parse(Console.ReadLine());
 
             ReadGraph(n);
 
+            // Source Removal Algorithm
             GetPredecessorCount();
-
             TopologicalSort();
-
             PrintResult();
+
+            //DFS Algorithm
+            //PrintTopSortResult();
         }
 
-        private static void PrintResult()
+        private static void PrintTopSortResult()
         {
-            if (predecessorCount.Count > 0)
+            try
+            {
+                TopSort();
+
+                //sorted.Reverse();
+
+                Console.WriteLine($"Topological sorting: {string.Join(", ", sorted)}");
+            }
+            catch (InvalidOperationException ie)
             {
                 Console.WriteLine("Invalid topological sorting");
-            }
-            else
-            {
-                Console.WriteLine($"Topological sorting: {string.Join(", ", sorted)}");
             }
         }
 
@@ -63,7 +72,21 @@
 
             }
         }
+        
+        // Source Removal Algorithm
+        private static void PrintResult()
+        {
+            if (predecessorCount.Count > 0)
+            {
+                Console.WriteLine("Invalid topological sorting");
+            }
+            else
+            {
+                Console.WriteLine($"Topological sorting: {string.Join(", ", sorted)}");
+            }
+        }
 
+        // Source Removal Algorithm
         private static void GetPredecessorCount()
         {
             foreach (var node in graph)
@@ -89,6 +112,7 @@
             }
         }
 
+        // Source Removal Algorithm
         private static void TopologicalSort()
         {
             while (predecessorCount.Count > 0)
@@ -108,6 +132,40 @@
                 sorted.Add(node.Key);
                 predecessorCount.Remove(node.Key);
             }
+        }
+
+        //DFS Algorithm
+        private static void TopSort()
+        {
+            foreach (var node in graph.Keys)
+            {
+                TopSortDFS(node);
+            }
+        }
+
+        //DFS Algorithm
+        private static void TopSortDFS(string node)
+        {
+            if (cycles.Contains(node))
+            {
+                throw new InvalidOperationException();
+            }
+
+            if (visited.Contains(node))
+            {
+                return;
+            }
+
+            cycles.Add(node);
+            visited.Add(node);
+
+            foreach (var child in graph[node])
+            {
+                TopSortDFS(child);
+            }
+
+            cycles.Remove(node);
+            sorted.Add(node);
         }
     }
 }
