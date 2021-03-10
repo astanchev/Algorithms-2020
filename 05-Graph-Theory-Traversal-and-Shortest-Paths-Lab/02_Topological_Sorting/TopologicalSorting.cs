@@ -29,25 +29,9 @@
             TopologicalSort();
             PrintResult();
 
-            //DFS Algorithm
+            //DFS Algorithm - 66/100 for judge
             //PrintTopSortResult();
-        }
-
-        private static void PrintTopSortResult()
-        {
-            try
-            {
-                TopSort();
-
-                //sorted.Reverse();
-
-                Console.WriteLine($"Topological sorting: {string.Join(", ", sorted)}");
-            }
-            catch (InvalidOperationException ie)
-            {
-                Console.WriteLine("Invalid topological sorting");
-            }
-        }
+        }        
 
         private static void ReadGraph(int n)
         {
@@ -135,16 +119,20 @@
         }
 
         //DFS Algorithm
-        private static void TopSort()
+        private static ICollection<string> TopSort()
         {
+            var sortedDFS = new LinkedList<string>();
+
             foreach (var node in graph.Keys)
             {
-                TopSortDFS(node);
+                TopSortDFS(node, sortedDFS);
             }
+
+            return sortedDFS;
         }
 
         //DFS Algorithm
-        private static void TopSortDFS(string node)
+        private static void TopSortDFS(string node, LinkedList<string> sortedDFS)
         {
             if (cycles.Contains(node))
             {
@@ -161,11 +149,26 @@
 
             foreach (var child in graph[node])
             {
-                TopSortDFS(child);
+                TopSortDFS(child, sortedDFS);
             }
 
             cycles.Remove(node);
-            sorted.Add(node);
+            sortedDFS.AddFirst(node);
+        }
+
+        //DFS Algorithm
+        private static void PrintTopSortResult()
+        {
+            try
+            {
+                var result = TopSort();
+
+                Console.WriteLine($"Topological sorting: {string.Join(", ", result)}");
+            }
+            catch (InvalidOperationException ie)
+            {
+                Console.WriteLine("Invalid topological sorting");
+            }
         }
     }
 }
