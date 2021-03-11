@@ -33,8 +33,10 @@
                 int destinationNode = pair[1];
 
                 int path = BFS(startNode, destinationNode);
-
                 Console.WriteLine($"{{{startNode}, {destinationNode}}} -> {path}");
+
+                //int steps = GetSteps(startNode, destinationNode);
+                //Console.WriteLine($"{{{startNode}, {destinationNode}}} -> {steps}");
             }
         }
 
@@ -54,7 +56,7 @@
             while (queue.Count > 0)
             {
                 var node = queue.Dequeue();
-                
+
 
                 if (node == destinationNode)
                 {
@@ -113,6 +115,36 @@
                     }
                 }
             }
+        }
+       
+        //Second solution
+        private static int GetSteps(int startNode, int destinationNode)
+        {
+            var queue = new Queue<int>();
+            queue.Enqueue(startNode);
+
+            var stepsToNode = new Dictionary<int, int> { { startNode, 0 } };
+
+            while (queue.Count > 0)
+            {
+                var node = queue.Dequeue();
+
+                if (node == destinationNode)
+                {
+                    return stepsToNode[node];
+                }
+
+                foreach (var child in graph[node])
+                {
+                    if (!stepsToNode.ContainsKey(child))
+                    {
+                        queue.Enqueue(child);
+                        stepsToNode[child] = stepsToNode[node] + 1;
+                    }
+                }
+            }
+
+            return -1;
         }
     }
 }
