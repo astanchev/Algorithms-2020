@@ -20,9 +20,9 @@
             visited = new HashSet<string>();
             cycles = new HashSet<string>();
 
-            var n = int.Parse(Console.ReadLine());
+            var lines = int.Parse(Console.ReadLine());
 
-            ReadGraph(n);
+            ReadGraph(lines);
 
             // Source Removal Algorithm
             GetPredecessorCount();
@@ -33,9 +33,9 @@
             //PrintTopSortResult();
         }        
 
-        private static void ReadGraph(int n)
+        private static void ReadGraph(int lines)
         {
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < lines; i++)
             {
                 var parts = Console.ReadLine().Split("->", StringSplitOptions.RemoveEmptyEntries);
                 var node = parts[0].TrimEnd();
