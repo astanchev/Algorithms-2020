@@ -40,11 +40,12 @@
     {
         private static Dictionary<string, List<string>> graph;
         private static List<Edge> edges;
+        private static HashSet<Edge> removedEdges;
 
         static void Main(string[] args)
         {
             var n = int.Parse(Console.ReadLine());
-            var removedEdges = new HashSet<Edge>(new EdgeComparer());
+            removedEdges = new HashSet<Edge>(new EdgeComparer());
             graph = new Dictionary<string, List<string>>();
             edges = new List<Edge>();
 
@@ -56,12 +57,12 @@
                 .ThenBy(e => e.To)
                 .ToList();
 
-            FindEdgesToRemove(removedEdges);
+            FindEdgesToRemove();
 
-            PrintResult(removedEdges);
+            PrintResult();
         }
 
-        private static void PrintResult(HashSet<Edge> removedEdges)
+        private static void PrintResult()
         {
             Console.WriteLine($"Edges to remove: {removedEdges.Count}");
             foreach (var edge in removedEdges)
@@ -70,7 +71,7 @@
             }
         }
 
-        private static void FindEdgesToRemove(HashSet<Edge> removedEdges)
+        private static void FindEdgesToRemove()
         {
             foreach (var edge in edges)
             {
