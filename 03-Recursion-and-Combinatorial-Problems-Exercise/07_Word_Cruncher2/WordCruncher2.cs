@@ -15,7 +15,9 @@
         static void Main(string[] args)
         {
             var words = Console.ReadLine().Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
+
             target = Console.ReadLine();
+
             occurances = new Dictionary<string, int>();
             selectedWords = new List<string>();
             wordsByLen = new Dictionary<int, List<string>>();

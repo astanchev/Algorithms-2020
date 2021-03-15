@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    class WordCruncher
+    public class WordCruncher
     {
         private static Dictionary<int, List<string>> wordsByIndex;
         private static List<string> selectedWords;
@@ -13,11 +13,11 @@
         private static string target;
         private static string current;
 
-        static void Main(string[] args)
+        public static void Main()
         {
-            var words = Console.ReadLine().Split(", ").ToList();
-            target = Console.ReadLine();
+            var words = Console.ReadLine().Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries).ToList();
 
+            target = Console.ReadLine();
 
             selectedWords = new List<string>();
             wordsByIndex = new Dictionary<int, List<string>>();
@@ -81,9 +81,6 @@
                     words.Add(word);
                 }
             }
-
-
         }
-
     }
 }
