@@ -11,6 +11,7 @@
         private static Dictionary<string, int> occurances;
         private static List<string> selectedWords;
         private static HashSet<string> results;
+
         static void Main(string[] args)
         {
             var words = Console.ReadLine().Split(new[] { ", " }, StringSplitOptions.RemoveEmptyEntries);
@@ -19,6 +20,7 @@
             selectedWords = new List<string>();
             wordsByLen = new Dictionary<int, List<string>>();
             results = new HashSet<string>();
+
             foreach (var word in words)
             {
                 if (!target.Contains(word))
@@ -27,6 +29,7 @@
                 }
 
                 var len = word.Length;
+
                 if (!wordsByLen.ContainsKey(len))
                 {
                     wordsByLen.Add(len, new List<string>());
@@ -40,11 +43,14 @@
                 {
                     occurances.Add(word, 1);
                 }
+
                 wordsByLen[len].Add(word);
             }
 
             current = string.Empty;
+
             GenSolutions(target.Length);
+
             Console.WriteLine(string.Join(Environment.NewLine, results));
         }
 
@@ -84,7 +90,6 @@
 
                         current = current.Remove(current.Length - word.Length, word.Length);
                     }
-
                 }
             }
         }
