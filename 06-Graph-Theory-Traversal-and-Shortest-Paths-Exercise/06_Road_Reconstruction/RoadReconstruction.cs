@@ -35,23 +35,23 @@
         }
     }
 
-    class RoadReconstruction
+    public class RoadReconstruction
     {
         private static Dictionary<string, HashSet<string>> graph;
         private static List<Edge> edges;
-        private static HashSet<Edge> removedEdges;
+        private static HashSet<Edge> importantEdges;
 
         static void Main(string[] args)
         {
             var n = int.Parse(Console.ReadLine());
             var e = int.Parse(Console.ReadLine());
-            removedEdges = new HashSet<Edge>(new EdgeComparer());
+            importantEdges = new HashSet<Edge>(new EdgeComparer());
             graph = new Dictionary<string, HashSet<string>>();
             edges = new List<Edge>();
 
             ReadInput(e);
 
-            FindEdgesToRemove();
+            FindImportantEdges();
 
             PrintResult();
         }
@@ -59,18 +59,14 @@
         private static void PrintResult()
         {
             Console.WriteLine($"Important streets:");
-            var removed = removedEdges.ToList();
 
-            foreach (var edge in edges)
+            foreach (var edge in importantEdges)
             {
-                if (!removed.Contains(edge))
-                {
-                    Console.WriteLine($"{edge.From} {edge.To}");
-                }
+                Console.WriteLine($"{edge.From} {edge.To}");
             }
         }
 
-        private static void FindEdgesToRemove()
+        private static void FindImportantEdges()
         {
             foreach (var edge in edges)
             {
@@ -80,9 +76,9 @@
                 graph[from].Remove(to);
                 graph[to].Remove(from);
 
-                if (HasPath(edge.From, edge.To))
+                if (IsImportant(edge.From, edge.To))
                 {
-                    removedEdges.Add(edge);
+                    importantEdges.Add(edge);
                 }
 
                 graph[from].Add(to);
@@ -90,7 +86,7 @@
             }
         }
 
-        private static bool HasPath(string from, string to)
+        private static bool IsImportant(string from, string to)
         {
             var queue = new Queue<string>();
             queue.Enqueue(from);
@@ -103,7 +99,7 @@
 
                 if (node == to)
                 {
-                    return true;
+                    return false;
                 }
 
                 foreach (var child in graph[node])
@@ -118,7 +114,7 @@
                 }
             }
 
-            return false;
+            return true;
         }
 
         private static void ReadInput(int e)
