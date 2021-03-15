@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Distance_Between_Vertices", "01_Distance_Between_Vertices\01_Distance_Between_Vertices.csproj", "{F4E0A3AC-4B79-421C-AE75-772BB0885E07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Distance_Between_Vertices", "01_Distance_Between_Vertices\01_Distance_Between_Vertices.csproj", "{F4E0A3AC-4B79-421C-AE75-772BB0885E07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Areas_in_Matrix", "02_Areas_in_Matrix\02_Areas_in_Matrix.csproj", "{979DEFB5-9AD0-48AB-90FA-8A1166C3D718}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Areas_in_Matrix", "02_Areas_in_Matrix\02_Areas_in_Matrix.csproj", "{979DEFB5-9AD0-48AB-90FA-8A1166C3D718}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Cycles_in_a_Graph", "03_Cycles_in_a_Graph\03_Cycles_in_a_Graph.csproj", "{BCD2B5AC-E915-44A9-B304-AB3B1BA13AFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Cycles_in_a_Graph", "03_Cycles_in_a_Graph\03_Cycles_in_a_Graph.csproj", "{BCD2B5AC-E915-44A9-B304-AB3B1BA13AFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Salaries", "04_Salaries\04_Salaries.csproj", "{BFF12913-D366-4E4D-948E-CC3106378C06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_Salaries", "04_Salaries\04_Salaries.csproj", "{BFF12913-D366-4E4D-948E-CC3106378C06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Break_Cycles", "05_Break_Cycles\05_Break_Cycles.csproj", "{1EC4FFFA-7F13-4A83-8D9A-8FC62BF40489}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Break_Cycles", "05_Break_Cycles\05_Break_Cycles.csproj", "{1EC4FFFA-7F13-4A83-8D9A-8FC62BF40489}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Road_Reconstruction", "06_Road_Reconstruction\06_Road_Reconstruction.csproj", "{5A8A205D-86A0-4FB3-AC5C-3CFD9506F64E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_Road_Reconstruction", "06_Road_Reconstruction\06_Road_Reconstruction.csproj", "{5A8A205D-86A0-4FB3-AC5C-3CFD9506F64E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Road_Reconstruction2", "06_Road_Reconstruction2\06_Road_Reconstruction2.csproj", "{5B8EADEA-64CC-44C3-83C2-DD7472300D56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5A8A205D-86A0-4FB3-AC5C-3CFD9506F64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A8A205D-86A0-4FB3-AC5C-3CFD9506F64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A8A205D-86A0-4FB3-AC5C-3CFD9506F64E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8EADEA-64CC-44C3-83C2-DD7472300D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8EADEA-64CC-44C3-83C2-DD7472300D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8EADEA-64CC-44C3-83C2-DD7472300D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8EADEA-64CC-44C3-83C2-DD7472300D56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
