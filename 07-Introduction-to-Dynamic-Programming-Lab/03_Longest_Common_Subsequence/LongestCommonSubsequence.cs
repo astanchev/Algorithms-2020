@@ -38,7 +38,8 @@
 
             while (row > 0 && col > 0)
             {
-                if (str1[row - 1] == str2[col - 1])
+                if (str1[row - 1] == str2[col - 1] &&
+                    table[row - 1, col - 1] == table[row, col] - 1)
                 {
                     row -= 1;
                     col -= 1;
