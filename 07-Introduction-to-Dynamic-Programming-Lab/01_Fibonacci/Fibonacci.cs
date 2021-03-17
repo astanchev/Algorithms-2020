@@ -1,29 +1,49 @@
 ﻿namespace _01_Fibonacci
 {
-    using System;    
-    using System.Numerics;
+    using System;
+    using System.Collections.Generic;
 
     class Fibonacci
     {
-        private static BigInteger[] results;
+        private static long[] results;
+        private static Dictionary<int, long> cache;
 
         static void Main(string[] args)
         {
-            long n = int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
 
-            results = new BigInteger[n + 1];
+            results = new long[n + 1];
+            cache = new Dictionary<int, long>();
 
-            FindFibbonacci(n);
+            //long res = FindFibbonacci(n);
+            long res = FindFibonacciDict(n);
 
-            PrintFibonacci(n);
+            Console.WriteLine(res);
         }
 
-        private static void PrintFibonacci(long n)
+        private static long FindFibonacciDict(int n)
         {
-            Console.WriteLine(results[n]);
+            if (cache.ContainsKey(n))
+            {
+                return cache[n];
+            }
+
+            if (n == 0)
+            {
+                return 0;
+            }
+
+            if (n == 1)
+            {
+                return 1;
+            }
+
+            cache[n] = FindFibonacciDict(n - 1) + FindFibonacciDict(n - 2);
+
+            return cache[n];
         }
 
-        private static BigInteger FindFibbonacci(long n)
+        private static long FindFibbonacci(int n)
         {
             if (results[n] != 0)
             {
@@ -46,5 +66,7 @@
 
             return results[n];
         }
+
+
     }
 }
