@@ -30,11 +30,16 @@
 
             var alanPresents = GetPresents(alanScore);
 
+            PrintResult(bobScore, alanScore, alanPresents);
+
+        }
+
+        private static void PrintResult(int bobScore, int alanScore, List<int> alanPresents)
+        {
             Console.WriteLine($"Difference: {bobScore - alanScore}");
             Console.WriteLine($"Alan:{alanScore} Bob:{bobScore}");
             Console.WriteLine($"Alan takes: {string.Join(" ", alanPresents)}");
             Console.WriteLine($"Bob takes the rest.");
-
         }
 
         private static List<int> GetPresents(int alanScore)
