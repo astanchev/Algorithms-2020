@@ -119,20 +119,20 @@
         }
 
         //DFS Algorithm
-        private static ICollection<string> TopSort()
+        private static List<string> TopSort()
         {
-            var sortedDFS = new LinkedList<string>();
+            var sortedDFS = new Stack<string>();
 
             foreach (var node in graph.Keys)
             {
                 TopSortDFS(node, sortedDFS);
             }
 
-            return sortedDFS;
+            return sortedDFS.ToList();
         }
 
         //DFS Algorithm
-        private static void TopSortDFS(string node, LinkedList<string> sortedDFS)
+        private static void TopSortDFS(string node, Stack<string> sortedDFS)
         {
             if (cycles.Contains(node))
             {
@@ -153,7 +153,7 @@
             }
 
             cycles.Remove(node);
-            sortedDFS.AddFirst(node);
+            sortedDFS.Push(node);
         }
 
         //DFS Algorithm
