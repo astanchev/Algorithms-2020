@@ -97,10 +97,12 @@
 
         private static void RelaxEdges(int nodes)
         {
+            //All edges are relaxed n-1 times, where n is number of nodes
             for (int i = 0; i < nodes - 1; i++)
             {
                 var updated = false;
 
+                //we relax all edges
                 foreach (var edge in edges)
                 {
                     if (double.IsPositiveInfinity(edge.From))
@@ -108,6 +110,7 @@
                         continue;
                     }
 
+                    //Relaxation
                     var newDistance = distances[edge.From] + edge.Weight;
                     if (newDistance < distances[edge.To])
                     {
