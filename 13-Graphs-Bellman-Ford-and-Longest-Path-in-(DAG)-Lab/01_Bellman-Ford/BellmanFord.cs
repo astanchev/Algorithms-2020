@@ -19,7 +19,7 @@
         private static double[] distances;
         private static int[] prev;
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var nodes = int.Parse(Console.ReadLine());
             var edgesCount = int.Parse(Console.ReadLine());
