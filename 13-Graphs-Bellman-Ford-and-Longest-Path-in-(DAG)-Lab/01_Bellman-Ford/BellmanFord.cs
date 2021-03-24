@@ -102,7 +102,7 @@
             {
                 var updated = false;
 
-                //we relax all edges
+                //Relax all edges
                 foreach (var edge in edges)
                 {
                     if (double.IsPositiveInfinity(edge.From))
