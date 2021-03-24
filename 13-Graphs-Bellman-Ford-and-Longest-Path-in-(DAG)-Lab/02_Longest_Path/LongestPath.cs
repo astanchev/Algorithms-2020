@@ -21,6 +21,7 @@
     public class LongestPath
     {
         private static List<Edge>[] graph;
+        private static double[] distances;
 
         public static void Main(string[] args)
         {
@@ -34,22 +35,31 @@
 
             var sortedNodes = TopologicalSorting();
 
-            var distances = new double[graph.Length];
-            Array.Fill(distances, double.NegativeInfinity);
-
+            // Initialize distances with negative Infinity
+            InitializeDistances();
             distances[source] = 0;
 
+            //Topological sort all vertices
+            //and find distances in that order
             CalculateDistances(sortedNodes, distances);
 
             Console.WriteLine(distances[destination]);
         }
 
+        private static void InitializeDistances()
+        {
+            distances = new double[graph.Length];
+            Array.Fill(distances, double.NegativeInfinity);
+        }
+
         private static void CalculateDistances(Stack<int> sortedNodes, double[] distances)
         {
+            // do for every node U in topological order
             while (sortedNodes.Count > 0)
             {
                 var node = sortedNodes.Pop();
 
+                //do for every adjacent node V of U
                 foreach (var edge in graph[node])
                 {
                     var newDistance = distances[node] + edge.Weight;
