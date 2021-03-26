@@ -1,12 +1,18 @@
 ﻿namespace _01_Strongly_Connected_Components
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-    class StronglyConnectedComponents
+    public class StronglyConnectedComponents
     {
-        static void Main(string[] args)
+        private static List<List<int>> stronglyConnectedComponents;
+
+        public static List<List<int>> FindStronglyConnectedComponents(List<int>[] targetGraph)
         {
-            Console.WriteLine("Hello World!");
+            throw new NotImplementedException();
         }
     }
 }
