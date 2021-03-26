@@ -1,12 +1,16 @@
 ﻿namespace _03_Articulation_Points
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-    class ArticulationPoints
+    public class ArticulationPoints
     {
-        static void Main(string[] args)
+        public static List<int> FindArticulationPoints(List<int>[] targetGraph)
         {
-            Console.WriteLine("Hello World!");
+            throw new NotImplementedException();
         }
     }
 }

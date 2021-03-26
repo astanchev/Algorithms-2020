@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectedComponents.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxFlow.Tests", "MaxFlow.Tests\MaxFlow.Tests.csproj", "{D327182B-D0C6-491E-9B8F-E817883EA53D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArticulationPoints.Tests", "ArticulationPoints.Tests\ArticulationPoints.Tests.csproj", "{FC1EF454-3063-477F-BD52-EF6B3A7B3B18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D327182B-D0C6-491E-9B8F-E817883EA53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D327182B-D0C6-491E-9B8F-E817883EA53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D327182B-D0C6-491E-9B8F-E817883EA53D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC1EF454-3063-477F-BD52-EF6B3A7B3B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC1EF454-3063-477F-BD52-EF6B3A7B3B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC1EF454-3063-477F-BD52-EF6B3A7B3B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC1EF454-3063-477F-BD52-EF6B3A7B3B18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
