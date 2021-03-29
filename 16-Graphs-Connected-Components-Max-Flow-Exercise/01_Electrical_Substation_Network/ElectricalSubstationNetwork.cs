@@ -36,7 +36,7 @@
                 component.Reverse();
                 Console.WriteLine($"{string.Join(", ", component)}");
             }
-        }
+        }        
 
         private static void FindStronglyConnected()
         {
