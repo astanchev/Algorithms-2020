@@ -23,9 +23,28 @@
 
             FindMaxTasks(start, end);
 
-            ExtractResultBFS(start, end, people);
+            //ExtractResultBFS(start, end, people);
+
+            //Extract result with traversal of а matrix
+            ExtractResult(people, tasks);
 
             Console.WriteLine(string.Join(Environment.NewLine, result));
+        }
+
+        private static void ExtractResult(int people, int tasks)
+        {
+            result = new SortedSet<string>();
+
+            for (int person = 1; person <= people; person++)
+            {
+                for (int task = people + 1; task <= people + tasks; task++)
+                {
+                    if (graph[task][person] > 0)
+                    {
+                        result.Add($"{(char)(person - 1 + 'A')}-{task - people}");
+                    }
+                }
+            }
         }
 
         private static void ExtractResultBFS(int start, int end, int people)
