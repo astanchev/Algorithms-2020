@@ -28,7 +28,8 @@
                 while (currentNode != start)
                 {
                     var prevNode = parent[currentNode];
-
+                    
+                    //Modify pathflow to hold the smallest edge capacity in the path
                     var currentFlow = graph[prevNode][currentNode];
 
                     if (currentFlow > 0 && currentFlow < pathFlow)
@@ -49,6 +50,7 @@
                     var prevNode = parent[currentNode];
 
                     graph[prevNode][currentNode] -= pathFlow;
+                    //Add the path flow amount to reverse edge
                     graph[currentNode][prevNode] += pathFlow;
 
                     currentNode = prevNode;
@@ -62,6 +64,7 @@
         {
             var visited = new bool[graph.Length];
 
+            //Fill the parents array during BFS
             Queue<int> queue = new Queue<int>();
             queue.Enqueue(start);
             visited[start] = true;
@@ -81,6 +84,7 @@
                 }
             }
 
+            //return true if there is a path to the end
             return visited[end];
         }
     }

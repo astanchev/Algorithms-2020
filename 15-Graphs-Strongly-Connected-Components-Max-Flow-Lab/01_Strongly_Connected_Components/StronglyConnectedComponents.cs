@@ -20,11 +20,15 @@
 
             BuildReverseGraph();
 
+            //Traverse the graph with DFS and push all nodes in the stack
+            //in post-order (on return from the recursion)
             for (int node = 0; node < graph.Length; node++)
             {
                 Dfs(node);
             }
 
+            //Traverse the nodes from the stack and perform reverse DFS
+            //to find strongly connected components
             visited = new bool[reversedGraph.Length];
 
             while (stack.Count > 0)
@@ -54,6 +58,7 @@
             {
                 foreach (var child in graph[node])
                 {
+                    //add the reverse edge
                     reversedGraph[child].Add(node);
                 }
             }
@@ -66,6 +71,7 @@
                 return;
             }
 
+            //Mark node as visites
             visited[node] = true;
 
             foreach (var child in reversedGraph[node])
@@ -76,6 +82,7 @@
                 }
             }
 
+            //Add current node to the last list of strongly connected components
             stronglyConnectedComponents.Last().Add(node);
         }
 
@@ -96,6 +103,7 @@
                 }
             }
 
+            //add node to stack
             stack.Push(node);
         }
     }

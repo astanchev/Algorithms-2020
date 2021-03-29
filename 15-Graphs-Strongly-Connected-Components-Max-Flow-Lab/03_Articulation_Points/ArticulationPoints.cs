@@ -20,7 +20,9 @@
         {
             graph = targetGraph;
             visited = new bool[targetGraph.Length];
+            //set depth
             depths = new int[targetGraph.Length];
+            //set lowpoint
             lowpoint = new int[targetGraph.Length];
             parent = new int?[targetGraph.Length];
             articulationPoints = new List<int>();
@@ -50,7 +52,9 @@
                 if (!visited[child])
                 {
                     parent[child] = node;
+                    //recursively call FindArticulationPoints for the child with depth + 1
                     FindArticulationPoints(child, depth + 1);
+                    //increase child count
                     countChildren++;
 
                     if (lowpoint[child] >= depths[node])
@@ -58,9 +62,10 @@
                         isArticulationPoint = true;
                     }
 
+                    //set lowpoint for the node to be smaller between itself and its childs lowpoint
                     lowpoint[node] = Math.Min(lowpoint[node], lowpoint[child]);
                 }
-                else if (child != parent[node])
+                else if (child != parent[node])//child is not current node's parent
                 {
                     lowpoint[node] = Math.Min(lowpoint[node], depths[child]);
                 }

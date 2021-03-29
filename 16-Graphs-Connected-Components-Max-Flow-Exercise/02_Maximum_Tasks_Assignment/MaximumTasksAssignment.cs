@@ -8,6 +8,7 @@
     {
         private static int[][] graph;
         private static int[] parents;
+        private static SortedSet<string> result;
 
         public static void Main(string[] args)
         {
@@ -15,10 +16,64 @@
             int tasks = int.Parse(Console.ReadLine());
 
             graph = ReadInput(people, tasks);
+
             parents = Enumerable.Repeat(-1, graph.Length).ToArray();
 
-            
-            
+            var (start, end) = (0, graph.Length - 1);
+
+            FindMaxTasks(start, end);
+
+            ExtractResultBFS(start, end, people);
+
+            Console.WriteLine(string.Join(Environment.NewLine, result));
+        }
+
+        private static void ExtractResultBFS(int start, int end, int people)
+        {
+            var queue = new Queue<int>();
+            result = new SortedSet<string>();
+            var visited = new bool[graph.Length];
+
+            queue.Enqueue(end);
+            visited[end] = true;
+
+            while (queue.Count > 0)
+            {
+                var node = queue.Dequeue();
+
+                for (int child = 0; child < graph[node].Length; child++)
+                {
+                    if (graph[node][child] > 0 && !visited[child])
+                    {
+                        queue.Enqueue(child);
+                        visited[child] = true;
+
+                        if (node != end && node != start &&
+                            child != end && child != start)
+                        {
+                            result.Add($"{(char)(child - 1 + 'A')}-{node - people}");
+                        }
+                    }
+                }
+            }
+        }
+
+        private static void FindMaxTasks(int start, int end)
+        {
+            while (BFS(start, end))
+            {
+                var currentNode = end;
+
+                while (currentNode != start)
+                {
+                    var prevNode = parents[currentNode];
+
+                    graph[prevNode][currentNode] = 0;
+                    graph[currentNode][prevNode] = 1;
+
+                    currentNode = prevNode;
+                }
+            }
         }
 
         private static bool BFS(int start, int end)
@@ -32,6 +87,11 @@
             while (queue.Count > 0)
             {
                 var node = queue.Dequeue();
+
+                if (node == end)
+                {
+                    return true;
+                }
 
                 for (int child = 0; child < graph[node].Length; child++)
                 {
@@ -64,7 +124,7 @@
                 result[0][i] = 1;
             }
 
-            
+
             for (int i = 1; i <= tasks; i++)
             {
                 result[i + people][result.Length - 1] = 1;
