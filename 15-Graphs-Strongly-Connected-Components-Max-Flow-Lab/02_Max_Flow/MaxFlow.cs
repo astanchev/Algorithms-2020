@@ -20,6 +20,7 @@
 
             while (BFS(start, end))
             {
+                // find max Flow
                 var pathFlow = int.MaxValue;
 
                 var currentNode = end;
@@ -40,6 +41,7 @@
 
                 maxFlow += pathFlow;
 
+                // Reconstruct Path
                 currentNode = end;
 
                 while (currentNode != start)
