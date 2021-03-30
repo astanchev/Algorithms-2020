@@ -3,17 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Cable_Merchant", "01_Cable_Merchant\01_Cable_Merchant.csproj", "{8561F9B7-A499-4FE6-AB1F-281B7DBF48D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Cable_Merchant", "01_Cable_Merchant\01_Cable_Merchant.csproj", "{8561F9B7-A499-4FE6-AB1F-281B7DBF48D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Battle_Points", "02_Battle_Points\02_Battle_Points.csproj", "{500CB105-CD87-4E2D-A502-97B74AE74D27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Battle_Points", "02_Battle_Points\02_Battle_Points.csproj", "{500CB105-CD87-4E2D-A502-97B74AE74D27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Longest_String_Chain", "03_Longest_String_Chain\03_Longest_String_Chain.csproj", "{44E1C3CA-D4F4-431D-A16B-9D3D193DDA45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Longest_String_Chain", "03_Longest_String_Chain\03_Longest_String_Chain.csproj", "{44E1C3CA-D4F4-431D-A16B-9D3D193DDA45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Longest_Zigzag_Subsequence", "04_Longest_Zigzag_Subsequence\04_Longest_Zigzag_Subsequence.csproj", "{6A7FFC47-502F-462E-B820-B48CBE8848A2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Dividing_Presents", "05_Dividing_Presents\05_Dividing_Presents.csproj", "{6C11C199-78BA-48E3-AD92-76FF75423401}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Minimum_Edit_Distance", "06_Minimum_Edit_Distance\06_Minimum_Edit_Distance.csproj", "{9F7CB9D6-F0B6-4DEE-8D13-9AC938D34154}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_Longest_Zigzag_Subsequence", "04_Longest_Zigzag_Subsequence\04_Longest_Zigzag_Subsequence.csproj", "{6A7FFC47-502F-462E-B820-B48CBE8848A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +33,6 @@ Global
 		{6A7FFC47-502F-462E-B820-B48CBE8848A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A7FFC47-502F-462E-B820-B48CBE8848A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A7FFC47-502F-462E-B820-B48CBE8848A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6C11C199-78BA-48E3-AD92-76FF75423401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C11C199-78BA-48E3-AD92-76FF75423401}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C11C199-78BA-48E3-AD92-76FF75423401}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C11C199-78BA-48E3-AD92-76FF75423401}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F7CB9D6-F0B6-4DEE-8D13-9AC938D34154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F7CB9D6-F0B6-4DEE-8D13-9AC938D34154}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F7CB9D6-F0B6-4DEE-8D13-9AC938D34154}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F7CB9D6-F0B6-4DEE-8D13-9AC938D34154}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
