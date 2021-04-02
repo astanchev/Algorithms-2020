@@ -23,6 +23,13 @@
 
             FillVolumeMatrix(volumeChanges, maxVolume);
 
+            int finalSongMaxVolume = FindMaxVolume(volumeChanges, maxVolume);
+
+            Console.WriteLine(finalSongMaxVolume);
+        }
+
+        private static int FindMaxVolume(int[] volumeChanges, int maxVolume)
+        {
             var finalSongMaxVolume = -1;
 
             for (var i = maxVolume; i >= 0; i--)
@@ -36,7 +43,7 @@
                 break;
             }
 
-            Console.WriteLine(finalSongMaxVolume);
+            return finalSongMaxVolume;
         }
 
         private static void FillVolumeMatrix(int[] volumeChanges, int maxVolume)
