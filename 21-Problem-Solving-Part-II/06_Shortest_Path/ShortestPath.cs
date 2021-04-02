@@ -7,16 +7,15 @@
     {
         private static  List<string> paths = new List<string>();
         private static  List<int> unknownIndexes = new List<int>();
-        private static  char[] Directions = { 'L', 'R', 'S' };
+        private static  char[] fixedDirections = { 'L', 'R', 'S' };
 
         public static void Main(string[] args)
         {
-            var directions = Console.ReadLine()
-                .ToCharArray();
+            var directions = Console.ReadLine().ToCharArray();
 
             for (var i = 0; i < directions.Length; i++)
             {
-                if (directions[i].Equals('*'))
+                if (directions[i] == '*')
                 {
                     unknownIndexes.Add(i);
                 }
@@ -39,9 +38,10 @@
 
             var index = unknownIndexes[unknownIndex];
 
-            foreach (var direction in Directions)
+            foreach (var direction in fixedDirections)
             {
                 directions[index] = direction;
+
                 GetPossiblePaths(directions, unknownIndex + 1);
             }
         }
