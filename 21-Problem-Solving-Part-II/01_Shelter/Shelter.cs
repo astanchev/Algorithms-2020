@@ -1,6 +1,7 @@
 ﻿namespace _01_Shelter
 {
     using System;
+    using System.Collections.Generic;
 
     public class Shelter
     {
@@ -8,5 +9,7 @@
         {
             Console.WriteLine("Hello World!");
         }
+
+        
     }
 }
