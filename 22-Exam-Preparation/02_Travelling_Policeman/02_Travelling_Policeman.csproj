@@ -6,4 +6,8 @@
     <RootNamespace>_02_Travelling_Policeman</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="SoftUni.Wintellect.PowerCollections" Version="2.0.0" />
+  </ItemGroup>
+
 </Project>

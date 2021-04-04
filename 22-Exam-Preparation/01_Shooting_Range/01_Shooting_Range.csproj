@@ -6,4 +6,8 @@
     <RootNamespace>_01_Shooting_Range</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="SoftUni.Wintellect.PowerCollections" Version="2.0.0" />
+  </ItemGroup>
+
 </Project>

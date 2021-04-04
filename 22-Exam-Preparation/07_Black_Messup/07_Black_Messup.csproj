@@ -6,4 +6,8 @@
     <RootNamespace>_07_Black_Messup</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="SoftUni.Wintellect.PowerCollections" Version="2.0.0" />
+  </ItemGroup>
+
 </Project>
