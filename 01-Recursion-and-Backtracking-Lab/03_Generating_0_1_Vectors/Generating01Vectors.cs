@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Program
+    class Generating01Vectors
     {
         static void Main(string[] args)
         {

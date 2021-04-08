@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Program
+    class RecursiveDrawing
     {
         private static char firstChar = '*';
         private static char secondChar = '#';

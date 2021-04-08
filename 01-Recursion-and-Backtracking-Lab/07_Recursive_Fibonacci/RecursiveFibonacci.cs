@@ -3,7 +3,7 @@
     using System;
     using System.Numerics;
 
-    class Program
+    class RecursiveFibonacci
     {
         private static BigInteger[] results;
 

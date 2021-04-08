@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    class Program
+    class PathsInLabyrinth
     {
         private static char freeCell = '-';
         private static char wallCell = '*';

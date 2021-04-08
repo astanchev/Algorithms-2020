@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Text;
 
-    class Program
+    class QueensPuzzle
     {
         private static bool[,] board;
         private static int boardDimension = 8;
