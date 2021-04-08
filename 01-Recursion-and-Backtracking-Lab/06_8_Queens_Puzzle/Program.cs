@@ -37,7 +37,7 @@
         {
             if (row == board.GetLength(0))
             {
-                PrintBoard();
+                AddSolution();
                 return;
             }
 
@@ -70,7 +70,7 @@
                     atackedRightDiagonals.Contains(row + col);
         }
 
-        private static void PrintBoard()
+        private static void AddSolution()
         {
             var sb = new StringBuilder();
 
