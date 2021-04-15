@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Program
+    class NChooseKCount
     {
         static void Main(string[] args)
         {
